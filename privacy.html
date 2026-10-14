@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pl">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RunMaster — polityka prywatności</title>
+<link rel="stylesheet" href="style.css">
+<main>
+<p><a href="index.html">← RunMaster</a></p>
+<h1>Polityka prywatności</h1>
+<p>Data: 14 października 2026 r. Dokument dotyczy integracji osobistej aplikacji RunMaster z Google Calendar.</p>
+<h2>Właściciel i kontakt</h2>
+<p>RunMaster jest obsługiwany przez Łukasza do osobistego użytku. Pytania dotyczące danych: <a href="mailto:4007mj@gmail.com">4007mj@gmail.com</a>.</p>
+<h2>Jakie dane są używane i dlaczego?</h2>
+<ul>
+<li>Przedziały początku i końca zajętości ze skonfigurowanego kalendarza Google służą do sprawdzania dostępności. Odczyt Free/Busy nie pobiera tytułów, opisów ani list uczestników prywatnych wydarzeń.</li>
+<li>Po zatwierdzeniu publikacji do Google trafiają dane treningu: nazwa, termin, czas trwania, opis, instrukcje oraz identyfikator i wersja sesji. Opis może obejmować wskazówki dotyczące regeneracji lub warunków przerwania treningu.</li>
+<li>RunMaster odczytuje własne opublikowane wydarzenie w celu potwierdzenia zapisu i przechowuje jego identyfikator do obsługi publikacji.</li>
+<li>Tokeny OAuth pozwalają utrzymywać połączenie bez ponownego logowania przy każdej operacji. Aplikacja nie otrzymuje hasła do konta Google.</li>
+</ul>
+<h2>Zakresy uprawnień</h2>
+<p><code>calendar.events.freebusy</code> służy do odczytu dostępności. <code>calendar.events</code> umożliwia odczyt i edycję wydarzeń w kalendarzach objętych uprawnieniem; RunMaster wykorzystuje je do publikacji i weryfikacji własnych wydarzeń treningowych. Zakres technicznego uprawnienia jest szerszy niż sam odczyt zajętości.</p>
+<h2>Przechowywanie i ochrona</h2>
+<p>Tokeny OAuth są szyfrowane w plikach na prywatnym serwerze, poza repozytorium kodu, z ograniczonym dostępem do plików. Dane aplikacji i jej chronione kopie zapasowe pozostają w środowisku właściciela. Połączenia z Google odbywają się przez HTTPS. Sam serwer aplikacji nie jest udostępniany publicznie przez tę witrynę.</p>
+<h2>Udostępnianie danych</h2>
+<p>Google otrzymuje dane potrzebne do uwierzytelnienia oraz obsługi kalendarza i opublikowanych treningów. Dane Google nie są sprzedawane ani wykorzystywane do reklam. Wykorzystanie informacji otrzymanych z Google API podlega <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, w tym wymaganiom Limited Use.</p>
+<h2>Odłączenie i usunięcie danych</h2>
+<p>Dostęp aplikacji można cofnąć w <a href="https://myaccount.google.com/connections">ustawieniach połączeń konta Google</a>. Cofnięcie zgody blokuje dalsze korzystanie z tego dostępu; nie usuwa automatycznie wydarzeń już zapisanych w Google Calendar ani danych zapisanych wcześniej w RunMasterze. Właściciel może usunąć wydarzenia w Google Calendar i zlecić usunięcie lokalnych danych integracji. Kopie zapasowe mogą zachować wcześniejsze dane do czasu ich rotacji.</p>
+<h2>Witryna informacyjna</h2>
+<p>Te statyczne strony nie zawierają formularza logowania, skryptów analitycznych ani dostępu do danych RunMastera. Operator hostingu może przetwarzać standardowe dane techniczne połączenia zgodnie z własną polityką prywatności.</p>
+<footer><a href="index.html">Strona główna</a><a href="terms.html">Warunki korzystania</a></footer>
+</main>
+</html>
